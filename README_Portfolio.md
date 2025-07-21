@@ -23,6 +23,7 @@ This project tackles the critical business challenge of **predicting loan defaul
 - 📊 **Comprehensive EDA** revealing key business insights
 - 🔧 **Production-ready code** with modular architecture
 - ⚡ **Multiple model comparison** (Logistic Regression → Random Forest → LightGBM)
+- 🌐 **Interactive Dashboard** with professional web interface for live demonstrations
 
 ---
 
@@ -76,13 +77,16 @@ graph LR
 ```
 📁 fintech_pipeline_ml/
 ├── 📓 AnyoneAI - Sprint Project 02.ipynb  # Main analysis notebook
+├── 🌐 streamlit_app.py                   # 🎯 INTERACTIVE DASHBOARD
+├── 🚀 run_dashboard.py                   # Dashboard launcher script
 ├── 📁 src/                                # Modular code architecture
 │   ├── 🐍 data_utils.py                  # Data loading & splitting
 │   ├── 🐍 preprocessing.py               # Feature engineering pipeline
 │   └── 🐍 config.py                      # Configuration management
 ├── 📁 dataset/                           # Data storage
 ├── 📁 tests/                             # Unit tests
-├── 📄 requirements.txt                   # Dependencies
+├── 📄 requirements.txt                   # Core dependencies
+├── 📄 streamlit_requirements.txt         # Dashboard dependencies
 └── 📄 README_Portfolio.md               # This documentation
 ```
 
@@ -224,9 +228,26 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Launch Jupyter notebook
+# Launch the interactive dashboard (recommended!)
+python run_dashboard.py
+
+# Or launch Jupyter notebook for detailed analysis
 jupyter notebook "AnyoneAI - Sprint Project 02.ipynb"
 ```
+
+### **🌐 Interactive Dashboard Experience**
+The project features a **professional Streamlit dashboard** perfect for:
+- **Live demonstrations** during interviews
+- **Portfolio presentations** for recruiters
+- **Business stakeholder** communication
+- **Interactive exploration** of ML concepts
+
+**Dashboard Features:**
+- 📊 **Executive Summary**: Key metrics and model comparison
+- 🔍 **Data Exploration**: Interactive visualizations and insights
+- 🤖 **Model Performance**: Live training and ROC curve analysis
+- 💼 **Business Intelligence**: Risk segmentation and financial impact
+- 🔮 **Live Loan Predictor**: Try different customer profiles in real-time!
 
 ### **Running the Complete Pipeline**
 ```python
@@ -303,6 +324,7 @@ Assuming $10,000 average loan amount:
 
 ### **Software Engineering**
 - ✅ **Modular code architecture** with separation of concerns
+- ✅ **Interactive dashboard development** with Streamlit
 - ✅ **Unit testing** with pytest
 - ✅ **Code formatting** with Black and isort
 - ✅ **Configuration management** with config files
@@ -339,6 +361,73 @@ Assuming $10,000 average loan amount:
 - **Automated testing** for code reliability
 - **Documentation** for knowledge transfer
 - **Ethical AI** considerations for fair lending
+
+---
+
+## 🌐 Interactive Dashboard Showcase
+
+### **Professional Web Interface**
+The project includes a **comprehensive Streamlit dashboard** that transforms complex ML analysis into an accessible, interactive experience. Perfect for demonstrating technical skills to both technical and non-technical audiences.
+
+### **🎯 Dashboard Capabilities**
+
+#### **📊 Executive Summary**
+- **Key Performance Metrics**: Live display of model performance (75.5% AUC-ROC)
+- **Model Comparison Visualization**: Interactive bar chart showing progression from baseline to champion model
+- **Technology Stack Overview**: Professional presentation of tools and methodologies
+- **Business Impact Metrics**: Financial impact and risk reduction quantification
+
+#### **🔍 Interactive Data Exploration**
+- **Dataset Statistics**: Real-time calculation of data characteristics
+- **Feature Analysis**: Interactive histograms and scatter plots
+- **Correlation Heatmaps**: Dynamic feature relationship visualization
+- **Demographic Insights**: Customer segmentation with business interpretations
+
+#### **🤖 Live Model Performance**
+- **Real-time Model Training**: Demonstrates actual ML algorithms in action
+- **ROC Curve Comparison**: Interactive visualization of model performance
+- **Feature Importance Analysis**: Dynamic ranking of predictive factors
+- **Cross-validation Results**: Robust performance estimation
+
+#### **💼 Business Intelligence Hub**
+- **Risk Segmentation**: Interactive customer categorization
+- **Financial Impact Calculator**: Dynamic ROI and cost-benefit analysis
+- **Strategic Recommendations**: Actionable insights for different risk segments
+- **Portfolio Optimization**: Age-based and demographic analysis
+
+#### **🔮 Interactive Loan Predictor**
+- **Real-time Risk Assessment**: Adjust customer parameters and see instant predictions
+- **Risk Factor Breakdown**: Visual explanation of prediction drivers
+- **Business Recommendations**: Automatic approval/rejection guidance
+- **Scenario Testing**: Try different customer profiles and risk scenarios
+
+### **💡 Professional Applications**
+
+#### **For Job Interviews:**
+- **Live Demonstration**: Show ML skills in real-time
+- **Technical Discussion**: Deep-dive into model architecture and decisions
+- **Business Acumen**: Demonstrate understanding of financial impact
+- **Communication Skills**: Explain complex concepts to different audiences
+
+#### **For Portfolio Presentations:**
+- **Visual Impact**: Modern, professional interface
+- **Interactive Engagement**: Recruiters can explore the analysis themselves
+- **Comprehensive Coverage**: Shows both technical depth and business understanding
+- **Deployment Ready**: Demonstrates production-level development skills
+
+#### **For Stakeholder Communication:**
+- **Non-technical Friendly**: Business-focused language and visualizations
+- **Executive Summary**: High-level metrics for decision makers
+- **Risk Assessment Tool**: Practical application for loan officers
+- **ROI Justification**: Clear financial impact demonstration
+
+### **🎨 Technical Implementation**
+- **Streamlit Framework**: Modern Python web framework
+- **Plotly Visualizations**: Interactive, publication-quality charts
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Real-time Computation**: Live model training and predictions
+- **Professional Styling**: Corporate-appropriate design with readable fonts
+- **Error Handling**: Robust error management and user feedback
 
 ---
 
@@ -385,6 +474,7 @@ This project was developed as part of the AnyoneAI Machine Learning program, dem
 **Technologies Used:**
 - Python, Pandas, NumPy, Scikit-learn
 - LightGBM, Matplotlib, Seaborn
+- Streamlit, Plotly (Interactive Dashboard)
 - Jupyter Notebooks, pytest
 - Git, GitHub
 

@@ -33,6 +33,9 @@ pip install -r requirements.txt
 # Launch the main analysis notebook
 jupyter notebook "AnyoneAI - Sprint Project 02.ipynb"
 
+# Or run the interactive dashboard (great for demos!)
+python run_dashboard.py
+
 # Or run tests to verify setup
 pytest tests/
 ```
@@ -42,6 +45,8 @@ pytest tests/
 ```
 📁 fintech_pipeline_ml/
 ├── 📓 AnyoneAI - Sprint Project 02.ipynb  # Main analysis & implementation
+├── 🌐 streamlit_app.py                   # 🎯 INTERACTIVE DASHBOARD
+├── 🚀 run_dashboard.py                   # Dashboard launcher
 ├── 📄 README_Portfolio.md               # 📖 DETAILED PROJECT SHOWCASE
 ├── 📁 src/                              # Modular code architecture
 │   ├── 🐍 data_utils.py                # Data loading & splitting functions
@@ -49,7 +54,8 @@ pytest tests/
 │   └── 🐍 config.py                    # Configuration management
 ├── 📁 dataset/                         # Data storage (auto-downloaded)
 ├── 📁 tests/                           # Unit tests
-└── 📄 requirements.txt                 # Project dependencies
+├── 📄 requirements.txt                 # Project dependencies
+└── 📄 streamlit_requirements.txt       # Dashboard dependencies
 ```
 
 ## 🎯 Key Results
@@ -82,7 +88,33 @@ pytest tests/
 - **Scikit-learn**: Machine learning algorithms and pipelines
 - **LightGBM**: Advanced gradient boosting
 - **Matplotlib/Seaborn**: Data visualization
+- **Streamlit/Plotly**: Interactive dashboard and modern visualizations
 - **Jupyter**: Interactive development environment
+
+## 🎯 Interactive Dashboard - NEW! 🚀
+
+**👉 Launch the Interactive Dashboard: `python run_dashboard.py`**
+
+Experience the complete analysis through a **professional web interface** featuring:
+
+### **🎪 Dashboard Features**
+- **📊 Executive Summary**: Key metrics, model comparison, and technology stack overview
+- **🔍 Data Exploration**: Interactive visualizations, correlation heatmaps, and demographic analysis
+- **🤖 Model Performance**: Live model training, ROC curves, and feature importance analysis
+- **💼 Business Intelligence**: Risk segmentation, financial impact analysis, and strategic recommendations
+- **🔮 Live Loan Predictor**: Interactive risk assessment tool - try different customer profiles!
+
+### **💡 Perfect for:**
+- 👔 **Job Interviews**: Live demonstration of your ML skills
+- 📈 **Portfolio Presentations**: Professional showcase for recruiters
+- 🎓 **Learning**: Interactive exploration of ML concepts
+- 💼 **Business Stakeholders**: Non-technical friendly interface
+
+### **🎨 Professional Design**
+- Clean, corporate-style interface with readable fonts
+- Interactive Plotly visualizations
+- Real-time model predictions
+- Mobile-responsive layout
 
 ## 🔍 For Detailed Analysis
 
@@ -122,10 +154,12 @@ flake8 src/
 
 This project demonstrates:
 - **End-to-end ML pipeline** development
+- **Interactive dashboard** creation with Streamlit
 - **Financial risk modeling** expertise
 - **Production-ready code** practices
 - **Business impact** quantification
 - **Advanced model optimization** techniques
+- **Professional presentation** skills for stakeholders
 
 ---
 
