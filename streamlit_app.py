@@ -1,16 +1,36 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import roc_auc_score, roc_curve
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder
+
+# Handle imports with error checking for Streamlit Cloud
+try:
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from plotly.subplots import make_subplots
+except ImportError as e:
+    st.error(f"Plotly import error: {e}")
+    st.info("Please make sure plotly is installed: pip install plotly>=5.15.0")
+    st.stop()
+
+try:
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+except ImportError as e:
+    st.error(f"Visualization library import error: {e}")
+    st.info("Please make sure matplotlib and seaborn are installed")
+    st.stop()
+
+try:
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import roc_auc_score, roc_curve
+    from sklearn.model_selection import train_test_split
+    from sklearn.preprocessing import StandardScaler, LabelEncoder
+except ImportError as e:
+    st.error(f"Scikit-learn import error: {e}")
+    st.info("Please make sure scikit-learn is installed")
+    st.stop()
+
 import warnings
 warnings.filterwarnings('ignore')
 

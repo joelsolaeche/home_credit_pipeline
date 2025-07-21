@@ -9,3 +9,7 @@ pandas
 pytest
 scikit-learn
 seaborn
+# Streamlit Dashboard Dependencies
+streamlit>=1.28.0
+plotly>=5.15.0
+lightgbm>=3.0.0
