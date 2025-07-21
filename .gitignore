@@ -1,0 +1,348 @@
+# ============================================================================
+# .gitignore for Home Credit Default Risk ML Pipeline Project
+# ============================================================================
+
+# =============================================================================
+# DATASETS & DATA FILES (HEAVY FILES)
+# =============================================================================
+# Exclude all CSV data files (these are typically large)
+dataset/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Compressed data files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Excel files (can be large)
+*.xlsx
+*.xls
+
+# =============================================================================
+# MACHINE LEARNING MODELS & ARTIFACTS
+# =============================================================================
+# Trained model files
+*.joblib
+*.sav
+*.model
+*.h5
+*.pb
+*.onnx
+*.pt
+*.pth
+
+# Model checkpoints
+checkpoints/
+models/
+saved_models/
+mlruns/
+
+# =============================================================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# =============================================================================
+# Virtual environment directories
+myEnv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Conda environments
+.conda/
+anaconda3/
+miniconda3/
+
+# =============================================================================
+# PYTHON CACHE & COMPILED FILES
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# =============================================================================
+# JUPYTER NOTEBOOK FILES
+# =============================================================================
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter Notebook outputs (optional - uncomment if you want to exclude outputs)
+# *.ipynb
+
+# JupyterLab settings
+.jupyter/
+
+# =============================================================================
+# IDE & EDITOR FILES
+# =============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+# Log files
+*.log
+*.out
+*.err
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# =============================================================================
+# CONFIGURATION & SECRETS
+# =============================================================================
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with secrets
+config.ini
+secrets.json
+credentials.json
+.secrets/
+
+# API keys
+*.key
+*.pem
+*.p12
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =============================================================================
+# DOCUMENTATION BUILD
+# =============================================================================
+# Sphinx documentation
+docs/_build/
+.readthedocs.yml
+
+# MkDocs
+site/
+
+# =============================================================================
+# PACKAGE MANAGERS
+# =============================================================================
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+# Docker
+Dockerfile.prod
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml.local
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# =============================================================================
+# DATA SCIENCE SPECIFIC
+# =============================================================================
+# Large result files
+results/
+output/
+outputs/
+figures/
+plots/
+
+# Experiment tracking
+.mlflow/
+wandb/
+tensorboard/
+
+# Large numpy arrays
+*.npy
+*.npz
+
+# =============================================================================
+# CUSTOM PROJECT EXCLUSIONS
+# =============================================================================
+# Any custom heavy files specific to your project
+# Uncomment and modify as needed:
+
+# Large visualization files
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+
+# Backup files
+*.bak
+*.backup
+
+# =============================================================================
+# KEEP THESE FILES (NEGATION PATTERNS)
+# =============================================================================
+# Keep sample data files if they're small
+# !sample_data.csv
+# !example.csv
+
+# Keep important configuration templates
+!config.template.py
+!.env.example
+
+# Keep documentation images
+!docs/images/
+!README_images/
+
+# =============================================================================
+# NOTES
+# =============================================================================
+# This .gitignore excludes:
+# 1. Heavy dataset files that would exceed GitHub's file size limits
+# 2. Virtual environments and Python cache files
+# 3. IDE and OS-specific files
+# 4. Trained models and temporary files
+# 5. Sensitive configuration files
+#
+# To check what files would be ignored:
+# git status --ignored
+#
+# To force add an ignored file (if really needed):
+# git add -f filename
+# ============================================================================= 
