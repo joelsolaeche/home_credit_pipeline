@@ -454,18 +454,6 @@ The project includes a **comprehensive Streamlit dashboard** that transforms com
 - [ ] **Multi-model comparison** framework
 - [ ] **Cloud deployment** (AWS, GCP, Azure)
 
----
-
-## 📞 Contact & Collaboration
-
-**Interested in discussing this project or exploring collaboration opportunities?**
-
-- 💼 **LinkedIn**: [Your LinkedIn Profile]
-- 📧 **Email**: [your.email@domain.com]
-- 🐙 **GitHub**: [Your GitHub Profile]
-- 📊 **Portfolio**: [Your Portfolio Website]
-
----
 
 ## 📜 License & Acknowledgments
 
